@@ -1,0 +1,51 @@
+.trending-section {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 48px 0 24px 0;
+}
+
+.trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.trending-heading {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.trending-view-all {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  color: #0b69ff;
+  transition: gap 0.2s ease;
+}
+
+.trending-view-all:hover {
+  gap: 12px;
+}
+
+.trending-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .trending-heading {
+    font-size: 22px;
+  }
+}

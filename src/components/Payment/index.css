@@ -1,0 +1,254 @@
+.payment-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 90vh;
+  padding: 32px 16px;
+  background-color: #f1f5f9;
+}
+
+/* ---------- Payment card ---------- */
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(7, 21, 67, 0.12);
+  padding: 28px;
+}
+
+.payment-heading {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 700;
+  color: #171f46;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.order-details-box {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.order-detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.order-detail-total {
+  font-weight: 700;
+  font-size: 18px;
+  color: #171f46;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 8px;
+  margin-bottom: 0;
+}
+
+.payment-method-heading {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.method-icon {
+  margin-right: 8px;
+  color: #0b69ff;
+}
+
+.payment-methods-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 24px 0;
+}
+
+.payment-method-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.payment-radio {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #0b69ff;
+}
+
+.payment-method-label {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #1e293b;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.pay-now-btn {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0b69ff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pay-now-btn:hover {
+  background-color: #0952cc;
+}
+
+.dummy-note {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* ---------- Success view with moving truck ---------- */
+.order-success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(7, 21, 67, 0.12);
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.truck-road {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 24px;
+  border-bottom: 4px dashed #cbd5e1;
+  overflow: hidden;
+}
+
+.moving-truck {
+  position: absolute;
+  bottom: 6px;
+  font-size: 46px;
+  color: #0b69ff;
+  animation: drive 2.8s linear infinite;
+}
+
+@keyframes drive {
+  0% {
+    left: -60px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.success-tick {
+  font-size: 64px;
+  color: #16a34a;
+  margin-bottom: 16px;
+  animation: pop 0.5s ease-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-heading {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 700;
+  color: #171f46;
+  margin: 0 0 8px 0;
+}
+
+.success-text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #64748b;
+  margin: 0 0 24px 0;
+}
+
+/* ---------- Shared / empty ---------- */
+.continue-shopping-btn {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0b69ff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
+.continue-shopping-btn:hover {
+  background-color: #0952cc;
+}
+
+.payment-empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 28px;
+  box-shadow: 0 8px 24px rgba(7, 21, 67, 0.12);
+}
+
+.payment-empty-heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #171f46;
+  margin-bottom: 8px;
+}
+
+.payment-empty-text {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 576px) {
+  .payment-card,
+  .order-success-container {
+    padding: 20px;
+  }
+
+  .payment-heading {
+    font-size: 22px;
+  }
+}

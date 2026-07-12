@@ -1,0 +1,258 @@
+/* ============================================================
+   Dark theme overrides.
+   Activated by toggling the `dark-theme` class on <body>.
+   Palette:
+     page bg     #0f172a
+     surface     #1e293b
+     border      #334155
+     text        #e2e8f0
+     muted text  #94a3b8
+   ============================================================ */
+
+body.dark-theme {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* ---------- Header / nav ---------- */
+body.dark-theme .nav-header,
+body.dark-theme .nav-menu-mobile {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-theme .nav-link,
+body.dark-theme .nav-menu-item {
+  color: #e2e8f0;
+}
+
+/* ---------- Generic headings & text ---------- */
+body.dark-theme .products-list-heading,
+body.dark-theme .primedeals-list-heading,
+body.dark-theme .cart-heading,
+body.dark-theme .payment-heading,
+body.dark-theme .title,
+body.dark-theme .product-name,
+body.dark-theme .price,
+body.dark-theme .price-details,
+body.dark-theme .cart-product-title,
+body.dark-theme .cart-total-price,
+body.dark-theme .order-total-value,
+body.dark-theme .success-heading,
+body.dark-theme .payment-empty-heading,
+body.dark-theme .no-products-heading,
+body.dark-theme .product-failure-heading-text,
+body.dark-theme .product-not-found-heading,
+body.dark-theme .category-heading,
+body.dark-theme .rating-heading,
+body.dark-theme .home-heading,
+body.dark-theme .product-description,
+body.dark-theme .value,
+body.dark-theme .label,
+body.dark-theme .products-heading,
+body.dark-theme .similar-products-heading,
+body.dark-theme .similar-product-title,
+body.dark-theme .similar-product-price,
+body.dark-theme .cart-empty-heading {
+  color: #f1f5f9;
+}
+
+body.dark-theme .brand,
+body.dark-theme .cart-product-brand,
+body.dark-theme .total-items,
+body.dark-theme .reviews-count,
+body.dark-theme .success-text,
+body.dark-theme .payment-empty-text,
+body.dark-theme .no-products-description,
+body.dark-theme .products-failure-description,
+body.dark-theme .category-name,
+body.dark-theme .sort-by,
+body.dark-theme .home-description,
+body.dark-theme .similar-products-brand,
+body.dark-theme .quantity,
+body.dark-theme .and-up,
+body.dark-theme .cart-quantity {
+  color: #94a3b8;
+}
+
+/* ---------- Icons & text-buttons (kept visible on dark) ---------- */
+body.dark-theme .quantity-controller-icon,
+body.dark-theme .sort-by-icon,
+body.dark-theme .search-icon {
+  color: #94a3b8;
+}
+
+body.dark-theme .remove-button {
+  color: #cbd5e1;
+}
+
+body.dark-theme .select-option {
+  color: #e2e8f0;
+}
+
+/* ---------- Surfaces / cards ---------- */
+body.dark-theme .cart-item,
+body.dark-theme .payment-card,
+body.dark-theme .order-success-container,
+body.dark-theme .payment-empty-container,
+body.dark-theme .payment-method-item {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+/* ---------- Product card ---------- */
+body.dark-theme .product-item {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .thumbnail-container {
+  background-color: #0f172a;
+}
+
+body.dark-theme .link-item:hover .product-item,
+body.dark-theme .link-item:focus .product-item {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.55);
+}
+
+body.dark-theme .payment-page-container {
+  background-color: #0f172a;
+}
+
+body.dark-theme .order-details-box {
+  background-color: #0f172a;
+}
+
+body.dark-theme .order-detail-row,
+body.dark-theme .payment-method-heading,
+body.dark-theme .payment-method-label,
+body.dark-theme .order-detail-total {
+  color: #e2e8f0;
+}
+
+/* ---------- Filters ---------- */
+body.dark-theme .search-input-container,
+body.dark-theme .search-input {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+body.dark-theme .search-input::placeholder {
+  color: #64748b;
+}
+
+/* ---------- Sort dropdown ---------- */
+body.dark-theme .sort-by-select {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+/* ---------- Login ---------- */
+body.dark-theme .form-container {
+  background-color: #1e293b;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .input-label {
+  color: #94a3b8;
+}
+
+body.dark-theme .username-input-field,
+body.dark-theme .password-input-field {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* ---------- Shimmer in dark mode ---------- */
+body.dark-theme .shimmer-card {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .shimmer {
+  background-color: #334155;
+  background-image: linear-gradient(
+    to right,
+    #334155 0%,
+    #475569 20%,
+    #334155 40%,
+    #334155 100%
+  );
+}
+
+/* ---------- Home page (dark) ---------- */
+body.dark-theme .home-heading,
+body.dark-theme .home-section-heading,
+body.dark-theme .trending-heading,
+body.dark-theme .feature-title,
+body.dark-theme .category-card-name {
+  color: #f1f5f9;
+}
+
+body.dark-theme .home-description,
+body.dark-theme .home-stat-label,
+body.dark-theme .feature-text {
+  color: #94a3b8;
+}
+
+body.dark-theme .category-card-link {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .category-card-link:hover {
+  border-color: #60a5fa;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.55);
+}
+
+body.dark-theme .feature-card {
+  background-color: #1e293b;
+}
+
+body.dark-theme .home-stat-divider {
+  background-color: #334155;
+}
+
+/* ---------- Theme toggle button ---------- */
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-right: 12px;
+  color: #334155;
+  font-size: 22px;
+  line-height: 0;
+  transition: transform 0.35s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: rotate(25deg) scale(1.18);
+  color: #0b69ff;
+}
+
+body.dark-theme .theme-toggle-btn {
+  color: #fbbf24;
+}
+
+body.dark-theme .theme-toggle-btn:hover {
+  color: #fcd34d;
+}
+
+/* ---------- Nav active/hover colors in dark mode ---------- */
+body.dark-theme .nav-menu-item .nav-link:hover,
+body.dark-theme .nav-menu-item .nav-link-active {
+  color: #60a5fa;
+}
+
+body.dark-theme .nav-menu-item .nav-link::after,
+body.dark-theme .nav-menu-item-mobile .nav-link-mobile-active::after {
+  background-color: #60a5fa;
+}

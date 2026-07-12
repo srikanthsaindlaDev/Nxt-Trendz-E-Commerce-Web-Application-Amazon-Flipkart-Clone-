@@ -1,0 +1,28 @@
+/* Shared shimmer effect used by all skeleton loaders. */
+.shimmer {
+  background-color: #e2e8f0;
+  background-image: linear-gradient(
+    to right,
+    #e2e8f0 0%,
+    #f1f5f9 20%,
+    #e2e8f0 40%,
+    #e2e8f0 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 100%;
+  border-radius: 6px;
+  animation: shimmer 1.4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.shimmer-line {
+  height: 16px;
+}
